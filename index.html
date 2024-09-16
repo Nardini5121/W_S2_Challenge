@@ -4,14 +4,24 @@
 <head>
   <title>Web Sprint 2 Challenge</title>
   <script id="challenge">
+    
     // 👉 CHALLENGE 1
     function profileActivation(profile, reason) {
-
+      if ("Inactive for 90 days!") {
+        profile.active = false;
+        profile.reason = reason;
+        } else {
+        profile.active = true;
+        delete profile.reason;
+      }
+      return;profile;
     }
 
     // 👉 CHALLENGE 2
     function mineSweeper(grid, x, y) {
+      if (x < 1 || y < grid.length  ){
 
+      }
     }
 
     // 👉 CHALLENGE 3
