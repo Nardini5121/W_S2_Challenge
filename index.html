@@ -21,15 +21,22 @@
       
     // 👉 CHALLENGE 2
     function mineSweeper(grid, x, y) {
-      if (x < 1 || y < grid.length  ){
-
-      }
+      if (x < 1 || x > grid[0].length || y < 1 || y > grid.length) {
+        return "invalid coordinates";
+      } 
+      let row = y - 1;
+      let row = x - 1;
+      if (grid[row][col] === "redsquare") {
+        return "Red square, dead";
+      } else if (grid[row][col] === "blue square") {
+        return "Blue square, good";
     }
 
     // 👉 CHALLENGE 3
     function booleanize(obj) {
-
+      }
     }
+      
 
     // 👉 CHALLENGE 4
     function scrub(text, forbidden) {
